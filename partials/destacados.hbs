@@ -1,0 +1,13 @@
+<section class="cards">
+    <div class="tituloProds">
+        <h2>LOS MAS VENDIDOS</h2>
+    </div>
+    {{#each destacados}}
+    <div class="card">
+        <img src="{{url}}" alt="{{titulo}}" />
+        <h2>{{titulo}}</h2>
+        <h1>{{des}}</h1>
+    </div>
+    {{/each}}
+</section>
+
