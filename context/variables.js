@@ -1,7 +1,7 @@
 import prodsPage from './productosPage';
+import indexPage from './indexPage';
 import galPage from './galeriaPage';
 import blogPage from './blogPage';
-import indexPage from './indexPage';
 
 const pageContext = {
     "/productos.html":prodsPage,
