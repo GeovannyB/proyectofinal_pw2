@@ -5,9 +5,10 @@ import indexPage from './indexPage';
 
 const pageContext = {
     "/productos.html":prodsPage,
+    "/index.html":indexPage,
     "/galeria.html":galPage,
     "/blog.html":blogPage,
-    "/index.html":indexPage
+    
 }
 
 const getContext = (contextKey) => {
