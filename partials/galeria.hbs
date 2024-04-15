@@ -1,0 +1,11 @@
+<section class="galeria-container">
+    <h3>Galeria</h3>
+    {{#each galeria}}
+    <div class="galeria">
+        <div class="galeria-img">
+            <img src="{{imgUrl}}" alt="{{name}}" />
+            <div class="galeria-name">{{name}}</div>
+        </div>
+    </div>
+    {{/each}}
+</section>
