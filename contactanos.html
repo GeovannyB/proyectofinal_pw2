@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="less/styles.less">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+    <section class="contacto">
+        <section class="contenedor sombra">
+            <h1>Contacto</h1>
+            <form action="#" method="get">
+                <fieldset class="form-group">
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" name="nombre_usuario" id="nombre" placeholder="Ingrese su nombre">
+                    <br>
+                    <label for="nombre">Correo personal:</label>
+                    <input type="text" name="correo_usuario" id="correo" placeholder="Ingrese correo">
+                    <input type="hidden" name="llave" value="hola">
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend>Mensaje</legend>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Ingrese el asunto">
+                    <br>
+                    <label for="mensaje">Descripción</label>
+                    <input type="text" name="descripcion" id="mensaje" placeholder="Ingrese el mensaje">
+                    <br>
+                </fieldset>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </section>
+</body>
+{{>footer}}
+</html>
