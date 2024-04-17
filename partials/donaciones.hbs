@@ -1,0 +1,17 @@
+<section class="cards-containerDo">
+    <div class="tituloDo"></div>
+        <h2>Donaciones</h2>
+    </div>
+    <h3>Si quieres apoyarnos con una donación puedes hacerla a cualquiera de los siguientes números de cuenta, te lo agradecemos!</h3>
+    <h3>Cuenta a nombre de: Jose Lorenzo Flores Valle</h3>
+    {{#each cuenta}}
+    <div class="card-textDo">
+        <div class="card-titleDo">
+            <h3>{{titulo}}</h3>
+        </div>
+        <div class="card-contentDo">
+            <p>{{des}}</p>
+        </div>
+    </div>
+    {{/each}}
+</section>

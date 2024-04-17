@@ -1,0 +1,81 @@
+.cards-containerDo {
+    max-width: 800px;
+    margin: 20px auto 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: @primer-bg-color;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    align-items:center;
+
+    .tituloDo {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+
+        h2{
+            color: @segundo-bg-color;
+            font-size: 30px;
+        }
+    }
+
+    h3 {
+        color: @cuarto-tx-color;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+
+    .cardDo {
+        background-color: @primer-bg-color;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
+        
+
+        .card-textDo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            .card-titleDo {
+                text-align: center;
+            }
+
+            .card-contentDo {
+                p {
+                    padding: 1rem 1rem;
+                    margin: 0;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    @media(min-width: @sizes[lg]) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        padding: 2rem 1rem;
+
+    }
+}

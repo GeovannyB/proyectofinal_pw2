@@ -1,0 +1,104 @@
+.cardis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0rem;
+    padding: 0rem;
+    
+    .tituloPregs {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    div{
+        margin: 0.75rem;
+    }
+
+    .carde {
+        width: 24rem;
+        height: 19rem;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        color: @primary-tx-color;
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+        h1 {
+            position: absolute;
+            font-size: 10rem;
+            color: @secondary-tx-color;
+            opacity: 0;
+            transition: opacity .3s ease-out;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            margin: 40%;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            inset: auto auto 80px 30px;
+        }
+
+        h2 {
+            position: absolute;
+            inset: auto auto 200px 30px;
+            margin: 0;
+            transition: inset .3s .3s ease-out;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:@cuarto-tx-color;
+        }
+        p {
+            position: absolute;
+            font-size: 18px;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity .3s ease-out;
+            color: @segundo-bg-color;
+        }
+
+        p {
+            inset: auto auto 80px 30px;
+        }
+
+        &:hover h2 {
+            inset: auto auto 220px 30px;
+            transition: inset .3s ease-out;
+        }
+
+        &:hover p {
+            opacity: 1;
+            transition: opacity .5s .1s ease-in;
+        }
+
+        &:hover h1 {
+            opacity: 1;
+            transition: opacity .5s .1s ease-in;
+        }
+
+    }
+    @media(min-width: @sizes[tablet]){
+        h2 {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cardis{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem auto;
+        }
+    }
+}

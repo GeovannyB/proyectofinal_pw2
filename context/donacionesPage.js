@@ -1,0 +1,24 @@
+export default {
+    cuenta:[
+        {
+            "titulo":"BAC",
+            "des":"•751205601"
+        },
+        {
+            "titulo":"FICOHSA",
+            "des":"•200007044274"
+        },
+        {
+            "titulo":"ATLÁNTIDA",
+            "des":"•2020160619"
+        },
+        {
+            "titulo":"PAYPAL",
+            "des":"•@JLFlores14"
+        },
+        {
+            "titulo":"TENGO",
+            "des":"•97302038"
+        },
+    ]
+}
